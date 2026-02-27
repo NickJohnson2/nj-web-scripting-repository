@@ -12,6 +12,7 @@ h2 {
 p {
     color: darkblue;
     text-align: center;
+    width: 500px;
 }
 img {
     border-bottom: 100px;
