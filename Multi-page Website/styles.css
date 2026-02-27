@@ -3,21 +3,17 @@ body {
 }
 h1 {
     color: darkred;
-    text-align: center;
 }
 h2 {
     color: darkgreen;
-    text-align: center;
 }
 p {
     color: darkblue;
-    text-align: center;
     width: 500px;
 }
 img {
     border-bottom: 100px;
     border-top: 100px;
-    justify-content: center;
 }
 nav {
     color: darkviolet;
@@ -25,7 +21,6 @@ nav {
 iframe {
     border-bottom: 100px;
     border-top: 100px;
-    justify-content: center;
     max-width: 400%;
 }
 header {
