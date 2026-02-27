@@ -14,13 +14,18 @@ p {
     text-align: center;
 }
 img {
+    border-bottom: 100px;
+    border-top: 100px;
     align-items: center;
 }
 nav {
     color: darkviolet;
 }
 iframe {
+    border-bottom: 100px;
+    border-top: 100px;
     align-items: center;
+    max-width: 400%;
 }
 header {
     color: white;
