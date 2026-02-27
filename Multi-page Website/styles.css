@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(80, 80, 80);
+}
+h1 {
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    color: darkgreen;
+    text-align: center;
+}
+p {
+    color: darkblue;
+    text-align: center;
+}
+img {
+    align-items: center;
+}
+nav {
+    color: darkviolet;
+}
+iframe {
+    align-items: center;
+}
+header {
+    color: white;
+}
+footer {
+    color: white;
+}
