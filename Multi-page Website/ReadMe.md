@@ -1,0 +1,2 @@
+This website contains 3 pages that all go into detail about me. It has a home page which basically justs serves as an intro to what the other two pages are about, the about pages to goes over basically everything to do with me, and it has a projects page that go over the main big project that I am working on right now.
+![alt text](image.png)
