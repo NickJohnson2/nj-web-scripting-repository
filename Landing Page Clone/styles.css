@@ -1,0 +1,32 @@
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.nav .links {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.hero {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 60vh;
+text-align: center;
+padding: 2rem 1rem;
+}
+
+@media (min-width: 48rem) {
+.hero {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 60vh;
+text-align: center;
+padding: 4rem 2rem;
+}
+}
