@@ -30,3 +30,22 @@ text-align: center;
 padding: 4rem 2rem;
 }
 }
+
+
+.menu {
+display: grid;
+grid-template-columns: 16rem 1fr;
+gap: 1.5rem;
+}
+@media (max-width: 50rem) {
+.menu {
+grid-template-columns: 1fr;
+}
+}
+
+.container {
+max-width: var(--max);
+margin: 0 auto;
+padding: 0 var(--space-2);
+}
+
