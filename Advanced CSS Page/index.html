@@ -17,7 +17,28 @@
 
     <button id="themeToggle" type="button">
         Toggle theme
+        <script>
+            const root = document.documentElement;
+            const btn = document.getElementById("themeToggle");
+            btn.addEventListener("click", () => {
+            const isDark = root.getAttribute("data-theme") === "dark";
+            root.setAttribute("data-theme", isDark ? "light" : "dark");
+            });
+        </script>
     </button>
+
+    <script>
+         root = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        const saved = localStorage.getItem("theme");
+        if (saved) root.setAttribute("data-theme", saved);
+        btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") || "light";
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        });
+    </script>
 
     <img class="hero" src="https://corkframes.com/cdn/shop/articles/Corkframes_Coffee_Guide_520x500_422ebe38-4cfa-42b5-a266-b9bfecabaf30.jpg?v=1734598727" alt="hero-image">
 
