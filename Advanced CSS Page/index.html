@@ -19,8 +19,8 @@
         Toggle theme
         <script>
             const root = document.documentElement;
-            const btn = document.getElementById("themeToggle");
-            btn.addEventListener("click", () => {
+            const button = document.getElementById("themeToggle");
+            button.addEventListener("click", () => {
             const isDark = root.getAttribute("data-theme") === "dark";
             root.setAttribute("data-theme", isDark ? "light" : "dark");
             });
