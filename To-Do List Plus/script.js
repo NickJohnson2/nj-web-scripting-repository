@@ -20,8 +20,10 @@ localStorage.setItem("tasks", JSON.stringify(state.tasks));
 function render() {
 list.innerHTML = "";
 state.tasks.forEach((task, index) => {
+const input = document.createElement("input"); //
+input.type = "checkbox"; //
 const li = document.createElement("li");
-li.textContent = task;
+li.textContent = task+" ";
 const del = document.createElement("button");
 del.textContent = "Delete";
 del.addEventListener("click", () => {
