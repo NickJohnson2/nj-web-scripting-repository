@@ -1,47 +1,65 @@
-const button = document.getElementById("loadBtn");
-const output = document.getElementById("output");
-button.addEventListener("click", async () => {
-    try {
-        const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m");
-        const result = await response.json();
-        output.innerHTML = `
-        <h2>${result.title}</h2>
-        <p>${result.body}</p>
-        `;
-    } catch (error) {
-        output.textContent = "Failed to load data.";
-        console.error(error);
-    }
-});
+const searchBtn = document.getElementById("searchBtn");
 
-const loadBtn = document.getElementById("loadBtn");
-
+const searchInput = document.getElementById("searchInput");
 const status = document.getElementById("status");
-const loadBox = document.getElementById("loadBox");
+const results = document.getElementById("results");
 
-async function loadBtn() {
+searchBtn.addEventListener("click", runSearch);
+
+function runSearch() {
+
+const term = searchInput.value.trim();
+
+if (!term) {
+    status.textContent = "Enter a search term.";
+    results.innerHTML = "";
+    return;
+}
+}
+
+const url = `https://geocoding-api.open-meteo.com/v1/search?s=${encodeURIComponent(term)}`;
+
+async function runSearch() {
+
+    const term = searchInput.value.trim();
+
+    if (!term) {
+        status.textContent = "Please enter a search term.";
+        results.innerHTML = "";
+        return;
+    }
+
     status.textContent = "Loading...";
-    loadBox.textContent = "";
-    loadBtn.disabled = true;
+    results.innerHTML = "";
 
     try {
-        const response = await fetch("[https://api.adviceslip.com/advice](https://api.adviceslip.com/advice)");
+        const url = `https://geocoding-api.open-meteo.com/v1/search?s=${encodeURIComponent(term)}`;
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
         }
 
         const data = await response.json();
-        status.textContent = "Results:";
-        loadBox.textContent = data.slip.load;
+        console.log(data);
 
     } catch (error) {
-        status.textContent = "Loading failed. Please try again.";
-        loadBox.textContent = "";
+        status.textContent = "Something went wrong. Please try again.";
         console.error(error);
-    } finally {
-        loadBtn.disabled = false;
     }
 }
 
-loadBtn.addEventListener("click", loading);
+if (!data.city) {
+
+status.textContent = "No results found.";
+return;
+}
+
+status.textContent = `Found ${data.city.length} result(s).`;
+
+results.innerHTML = data.city.map(city => `  <div class="card">
+    <h3>${city.strName}</h3>
+    <p><strong>Latitude:</strong> ${city.strLatitude}</p>
+    <p><strong>Longitude:</strong> ${city.strLongitude}</p>
+    <p><strong>Elevation:</strong> ${city.strElevation}</p>
+  </div>`).join("");
