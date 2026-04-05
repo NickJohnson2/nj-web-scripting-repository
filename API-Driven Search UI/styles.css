@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    color: darkblue;
+    background-color: darkgray;
+    justify-content: center;
+    align-items: center;
+}
