@@ -5,6 +5,8 @@ h1 {
 }
 
 body {
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   background-color: rgb(1, 1, 130);
 }
