@@ -11,11 +11,15 @@ body {
   background-color: rgb(1, 1, 130);
 }
 
-#top-text {
+#top-text-size-input {
   color: rgb(251, 108, 203);
 }
 
-#bottom-text {
+#bottom-text-size-input {
+  color: rgb(251, 108, 203);
+}
+
+#image-input {
   color: rgb(251, 108, 203);
 }
 
