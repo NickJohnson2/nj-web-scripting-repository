@@ -11,6 +11,14 @@ body {
   background-color: rgb(1, 1, 130);
 }
 
+.top-text {
+  color: rgb(251, 108, 203);
+}
+
+.bottom-text {
+  color: rgb(251, 108, 203);
+}
+
 #meme-canvas {
   width: 300px;
 }

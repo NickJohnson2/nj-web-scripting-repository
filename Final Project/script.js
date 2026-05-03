@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
   const imageInput = document.getElementById('image-input');
   const generateBtn = document.getElementById('generate-btn');
-  // Default/Demo text
+  // Default text
   topTextInput.value = 'Top Text';
   bottomTextInput.value = 'Bottom Text';
 
