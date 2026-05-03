@@ -1,12 +1,12 @@
 h1 {
   font-family: 'Comic Sans MS';
   font-size: 30px;
-  color: purple;
+  color: rgb(179, 0, 179);
 }
 
 body {
   margin: 10px;
-  background-color: blue;
+  background-color: rgb(1, 1, 130);
 }
 
 #meme-canvas {

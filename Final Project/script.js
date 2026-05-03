@@ -50,8 +50,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const imageInput = document.getElementById('image-input');
   const generateBtn = document.getElementById('generate-btn');
   // Default/Demo text
-  topTextInput.value = 'Top\nValue';
-  bottomTextInput.value = 'Bottom\nValue';
+  topTextInput.value = 'Top Text';
+  bottomTextInput.value = 'Bottom Text';
 
   // Generate button click listener
   generateBtn.addEventListener('click', () => {
