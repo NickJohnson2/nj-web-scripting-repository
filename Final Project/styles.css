@@ -1,0 +1,14 @@
+h1 {
+  font-family: 'Comic Sans MS';
+  font-size: 30px;
+  color: purple;
+}
+
+body {
+  margin: 10px;
+  background-color: blue;
+}
+
+#meme-canvas {
+  width: 300px;
+}
